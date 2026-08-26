@@ -100,11 +100,15 @@ src/main/java/edu/eci/arsw/blueprints
 1. Repositorio en GitHub con:  
    - Código fuente actualizado.  
    - Configuración PostgreSQL (`application.yml` o script SQL).  
+      - *application.properties* **[AQUÍ](/src/main/resources/application.properties)**
+      - *init.sql* **[AQUÍ](/src/main/resources/init.sql)**
+
    - Swagger/OpenAPI habilitado.  
    - Clase `ApiResponse<T>` implementada.  
 
 2. Documentación:  
-   - Informe de laboratorio con instrucciones claras.  
+   - Informe de laboratorio con instrucciones claras. *(Instrucciones **[Postgres](/src/main/resources/PostgresUp.md)**)*
+   
    - Evidencia de consultas en Swagger UI y evidencia de mensajes en la base de datos.  
    - Breve explicación de buenas prácticas aplicadas.  
 
