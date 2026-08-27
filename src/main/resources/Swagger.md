@@ -65,22 +65,61 @@ Con la aplicacion ejecutandose, se puede acceder a:
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - Especificacion OpenAPI en JSON: http://localhost:8080/v3/api-docs
 
-Swagger UI permite consultar cada endpoint, revisar sus parametros y ejecutar
-peticiones desde el navegador.
+Swagger UI permite consultar cada endpoint, revisar sus parametros y ejecutar peticiones desde el navegador.
 
 ## 5. Verificacion con Docker y PostgreSQL
 
-Para validar la integracion completa, primero se inicia el contenedor de
-PostgreSQL y luego la aplicacion:
+Para validar la integracion completa, primero se inicia el contenedor de PostgreSQL y luego la aplicacion:
 
 ```
 mvn test
 mvn spring-boot:run
 ```
 
-Despues se abre Swagger UI y se ejecutan los endpoints con los datos de
-prueba. La respuesta debe conservar el formato uniforme de `ApiResponse` y
-los codigos HTTP definidos por la API.
+Despues se abre Swagger UI y se ejecutan los endpoints con los datos de prueba. La respuesta debe conservar el formato uniforme de `ApiResponse` y los codigos HTTP definidos por la API.
 
-La prueba del contexto depende de la conexion configurada en
-`application.properties`, por lo que debe ejecutarse con Docker activo.
+**Pruebas**:
+
+GET `/api/v1/blueprints`:
+
+![alt text](/src/main/resources/images/swagger0.png)
+
+---
+
+GET  `/api/v1/blueprints/{author}`:
+
+valido:
+
+![alt text](/src/main/resources/images/swagger1.png)
+
+invalido:
+
+![alt text](/src/main/resources/images/swagger2.png)
+
+---
+
+GET `/api/v1/blueprints/{author}/{bpname}`
+
+valido:
+
+![alt text](/src/main/resources/images/swagger3.png)
+
+invalido:
+
+![alt text](/src/main/resources/images/swagger4.png)
+
+---
+
+POST `/api/v1/blueprints`
+
+![alt text](/src/main/resources/images/swagger5.png)
+
+---
+
+PUT `/api/v1/blueprints/{author}/{bpname}/points`
+
+![alt text](/src/main/resources/images/swagger6.png)
+
+---
+
+![alt text](/src/main/resources/images/swagger7.png)
