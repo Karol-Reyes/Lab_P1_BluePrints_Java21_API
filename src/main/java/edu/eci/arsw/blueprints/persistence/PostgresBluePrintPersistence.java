@@ -79,8 +79,6 @@ public class PostgresBluePrintPersistence implements BlueprintPersistence {
                 pointsToText(bp.getPoints()), author, name);
     }
 
-    // ---- helpers, mismo rol que keyOf() en la versión en memoria ----
-
     private String keyOf(Blueprint bp) { return bp.getAuthor() + ":" + bp.getName(); }
 
     private boolean exists(String author, String name) {
