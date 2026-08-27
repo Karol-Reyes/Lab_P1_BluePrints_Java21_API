@@ -105,12 +105,16 @@ src/main/java/edu/eci/arsw/blueprints
 
    - Swagger/OpenAPI habilitado.  
    - Clase `ApiResponse<T>` implementada.  
+   
+      - *Clase imlementada **[aquí](/src/main/java/edu/eci/arsw/blueprints/model/ApiResponse.java)***
+                                            
+      - *Controller actualizado **[aquí](/src/main/java/edu/eci/arsw/blueprints/controllers/BlueprintsAPIController.java)***
 
 2. Documentación:  
    - Informe de laboratorio con instrucciones claras. *(Instrucciones **[Postgres](/src/main/resources/PostgresUp.md)**)*
    
    - Evidencia de consultas en Swagger UI y evidencia de mensajes en la base de datos.  
-   - Breve explicación de buenas prácticas aplicadas.  
+   - Breve explicación de buenas prácticas aplicadas.  *(Explicaciones **[Buenas Prácticas y Evidencia](/src/main/resources/BuenasPracticas.md)**)*
 
 ---
 
