@@ -1,6 +1,8 @@
 ## Laboratorio #4 – REST API Blueprints (Java 21 / Spring Boot 3.3.x)
 # Escuela Colombiana de Ingeniería – Arquitecturas de Software  
 
+- Karol XImena Rodriguez Reyes
+- Juan David Moreno D'Aleman
 ---
 
 ## 📋 Requisitos
@@ -85,11 +87,15 @@ src/main/java/edu/eci/arsw/blueprints
 - Expón documentación automática en `/swagger-ui.html`.  
 - Anota endpoints con `@Operation` y `@ApiResponse`.
 
+[Respuesta Aqui](/src/main/resources/Swagger.md)
+
 ### 5. Filtros de *Blueprints*
 - Implementa filtros:
   - **RedundancyFilter**: elimina puntos duplicados consecutivos.  
   - **UndersamplingFilter**: conserva 1 de cada 2 puntos.  
-- Activa los filtros mediante perfiles de Spring (`redundancy`, `undersampling`).  
+- Activa los filtros mediante perfiles de Spring (`redundancy`, `undersampling`).
+
+[Respuesta Aqui](/src/main/resources/Filtros.md)
 
 ---
 
@@ -98,13 +104,21 @@ src/main/java/edu/eci/arsw/blueprints
 1. Repositorio en GitHub con:  
    - Código fuente actualizado.  
    - Configuración PostgreSQL (`application.yml` o script SQL).  
+      - *application.properties* **[AQUÍ](/src/main/resources/application.properties)**
+      - *init.sql* **[AQUÍ](/src/main/resources/init.sql)**
+
    - Swagger/OpenAPI habilitado.  
    - Clase `ApiResponse<T>` implementada.  
+   
+      - *Clase imlementada **[aquí](/src/main/java/edu/eci/arsw/blueprints/model/ApiResponse.java)***
+                                            
+      - *Controller actualizado **[aquí](/src/main/java/edu/eci/arsw/blueprints/controllers/BlueprintsAPIController.java)***
 
 2. Documentación:  
-   - Informe de laboratorio con instrucciones claras.  
+   - Informe de laboratorio con instrucciones claras. *(Instrucciones **[Postgres](/src/main/resources/PostgresUp.md)**)*
+   
    - Evidencia de consultas en Swagger UI y evidencia de mensajes en la base de datos.  
-   - Breve explicación de buenas prácticas aplicadas.  
+   - Breve explicación de buenas prácticas aplicadas.  *(Explicaciones **[Buenas Prácticas y Evidencia](/src/main/resources/BuenasPracticas.md)**)*
 
 ---
 
