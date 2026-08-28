@@ -65,9 +65,9 @@ Antes del filtro
 
 `mvn spring-boot:run` 
 
-![alt text](image-1.png)
+![alt text](/src/main/resources/images/filter1.png)
 
-![alt text](image-2.png)
+![alt text](/src/main/resources/images/filter2.png)
 
 
 Despues del filtro
@@ -86,12 +86,12 @@ Antes del filtro
 
 `mvn spring-boot:run` 
 
-![alt text](image-3.png)
+![alt text](/src/main/resources/images/filter3.png)
 
-![alt text](image-4.png)
+![alt text](/src/main/resources/images/filter4.png)
 
 Despues del filtro
 
 `mvn spring-boot:run -Dspring-boot.run.profiles=undersampling`
 
-![alt text](image-5.png)
+![alt text](/src/main/resources/images/filter5.png)

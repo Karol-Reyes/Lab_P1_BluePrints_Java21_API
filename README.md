@@ -93,7 +93,9 @@ src/main/java/edu/eci/arsw/blueprints
 - Implementa filtros:
   - **RedundancyFilter**: elimina puntos duplicados consecutivos.  
   - **UndersamplingFilter**: conserva 1 de cada 2 puntos.  
-- Activa los filtros mediante perfiles de Spring (`redundancy`, `undersampling`).  
+- Activa los filtros mediante perfiles de Spring (`redundancy`, `undersampling`).
+
+[Respuesta Aqui](/src/main/resources/Filtros.md)
 
 ---
 
