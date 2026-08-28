@@ -37,22 +37,6 @@ mvn spring-boot:run
 
 En Postman crear un blueprint con `POST` usando la URL:`http://localhost:8080/api/v1/blueprints`
 
-Ejemplo de puntos para la prueba:
-
-```
-{
-	"author": "john",
-	"name": "filter-test",
-	"points": [
-		{ "x": 1, "y": 1 },
-		{ "x": 1, "y": 1 },
-		{ "x": 2, "y": 2 },
-		{ "x": 2, "y": 2 },
-		{ "x": 3, "y": 3 }
-	]
-}
-```
-
 Luego consultar:
 
 ```
@@ -71,3 +55,43 @@ Con `redundancy` deben desaparecer los duplicados consecutivos. Con
 `undersampling` deben aparecer los puntos de las posiciones `0`, `2`, `4`,
 etc. En ambos casos la respuesta debe ser `200 OK` y los datos originales de
 la base de datos no deben modificarse.
+
+
+**Prueba**:
+
+#### redundancy
+
+Antes del filtro
+
+`mvn spring-boot:run` 
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+
+Despues del filtro
+
+mvn spring-boot:run -Dspring-boot.run.profiles=redundancy
+
+solo se hace el `GET` porque ya esta creado
+
+![alt text](image.png)
+
+---
+
+#### undersampling
+
+Antes del filtro
+
+`mvn spring-boot:run` 
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+Despues del filtro
+
+`mvn spring-boot:run -Dspring-boot.run.profiles=undersampling`
+
+![alt text](image-5.png)
