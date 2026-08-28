@@ -18,7 +18,6 @@ public class UndersamplingFilter implements BlueprintsFilter {
     @Override
     public Blueprint apply(Blueprint bp) {
         List<Point> in = bp.getPoints();
-        if (in.size() <= 2) return bp;
         List<Point> out = new ArrayList<>();
         for (int i = 0; i < in.size(); i++) {
             if (i % 2 == 0) out.add(in.get(i));
